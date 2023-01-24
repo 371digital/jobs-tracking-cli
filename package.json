@@ -1,6 +1,6 @@
 {
   "name": "jobs-tracking-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "371 Jobs Tracking",
   "main": "./source/index.js",
   "scripts": {
@@ -10,7 +10,23 @@
     "prepack": "npm run build",
     "prepare": "npm run build"
   },
-  "author": "",
+  "author": "371Digital",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/371digital/jobs-tracking-cli"
+  },
+  "bugs": {
+    "url": "https://github.com/371digital/jobs-tracking-cli/issues"
+  },
+  "homepage": "https://github.com/371digital/jobs-tracking-cli#371-jobs-tracking-cli",
+  "keywords": [
+    "371Digital",
+    "node",
+    "nodejs",
+    "jobs-tracking",
+    "cli",
+    "jobs-tracking-cli"
+  ],
   "license": "ISC",
   "dependencies": {
     "@babel/cli": "7.20.7",
