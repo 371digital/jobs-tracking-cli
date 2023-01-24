@@ -1,0 +1,36 @@
+{
+  "name": "jobs-tracking-cli",
+  "version": "1.0.0",
+  "description": "371 Jobs Tracking",
+  "main": "./source/index.js",
+  "scripts": {
+    "start": "yarn build --watch",
+    "clean": "rm -rf build && mkdir build",
+    "build": "npm run clean && babel ./source --out-dir ./build --source-maps",
+    "prepack": "npm run build",
+    "prepare": "npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "7.20.7",
+    "@babel/core": "7.20.12",
+    "@babel/runtime": "7.20.13",
+    "axios": "^1.2.3",
+    "colors": "1.4.0",
+    "inquirer": "8.0.1",
+    "ora": "5.4.1",
+    "yargs": "17.2.1"
+  },
+  "bin": {
+    "jobs-tracking": "./lib/index.js"
+  },
+  "devDependencies": {
+    "@babel/node": "7.20.7",
+    "@babel/plugin-transform-runtime": "7.19.6",
+    "@babel/polyfill": "7.12.1",
+    "@babel/preset-env": "7.20.2",
+    "@babel/runtime": "7.20.13",
+    "babel-plugin-module-resolver": "5.0.0"
+  }
+}

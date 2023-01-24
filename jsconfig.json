@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "services": ["./source/services"],
+      "tools": ["./source/tools"],
+      "_constants": ["./source/constants"],
+    }
+  }
+}
